@@ -1,0 +1,96 @@
+* {
+   font-size: 1rem;
+   font-family: serif;
+   font-weight: normal;
+   color: #919191;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   border: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(#299dab, #00000045);
+  padding: 2rem;
+}
+
+.main {
+  max-width: 600px;
+  /* height: 80%; */
+  max-height: 900px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: #181818;
+  border-radius: 8px;
+  gap: 1rem;
+}
+
+.title {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-family: serif;
+  font-size: 1.5rem;
+  color: #299dab;
+  font-weight:900;
+  text-align: center;
+}
+
+.handler {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.text-container {
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.description {
+  font-family: inherit;
+  margin-bottom: .5rem;
+}
+
+.name {
+  font-family: inherit;
+  display: block;
+  color: #c7c7c7;
+  font-size: .9rem;
+}
+
+.equation {
+  margin-bottom: 1rem;
+}
+
+.handler {
+  margin-bottom: 2rem;
+}
+
+.text-handler {
+  font-family: sans-serif;
+}
+
+.input-handler {
+  background: none;
+  border-bottom: 1px solid #7d7d7d9e;
+  outline: thin;
+  color: #299dab;
+}
+
+.result {
+  background: #adb7b8;
+  margin: 2rem 1rem;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #181818;
+}
+
+.lim {
+  color: inherit;
+  font-weight: bold;
+}
