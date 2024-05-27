@@ -1,53 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Limite vectorial</title>
-        <!-- importing application script -->
-        <script src="scripts/main.js"></script>
-        <!-- importing application styles -->
-        <link rel="stylesheet" href="css/main.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcular limite de 2 variables</title>
+        <script src="./main.js" defer></script>
     </head>
     <body>
-      <main class="main">
-        <h1 class="title">
-            Calculo de limite para funcion vectorial 
-        </h1>
-        <div class="text-container">
-          <span class="name">
-          Por Brahian Valanta
-          y Jorge Iván Acosta
-          </span>
-          <p class="description">
-          Herramienta para verificar si un limite existe segun la tendencia dada evaluada
-          en la siguiente función vectorial:
-          <br>
-          </p>
-        </div>
-        <math class="equation">
-          <mi>r</mi>
-          <mo>=</mo>
-          <mi><p>< t <sup>2</sup></p></mi>
-          <mo> , </mo>
-          <mi>
-            <p>
-              t 
-              <sup>
-                <mfrac>
-                  <mn>1/</mn>
-                  <mn>2</mn>
-                </mfrac>
-              </sup>
-               >
-            </p>
-          </mi>
-        </math>
-        <div class="handler">
-          <span class="text-handler">t =</span>
-          <input id="t" class="input-handler" type="number">
-        </div>
-        <div id="result" class="result"></div>
-      </main>
+        <form action="" class="container">
+            <input type="number" placeholder="A" id="input-a" required>
+            <input type="number" placeholder="B" id="input-b" required>
+
+            <br>
+            <br>
+
+            <input type="number" placeholder="C" id="input-c" required>
+            <input type="number" placeholder="D" id="input-d" required>
+
+            <br>
+            <br>
+
+            <input type="number" placeholder="particiones x" id="parts-x" required>
+            <input type="number" placeholder="particiones y" id="parts-y" required>
+
+            <br>
+            <br>
+
+            <label>
+                <input type="radio" name="funct" id="funct-func1" checked>
+                1ra funcion ( x² + y² )
+            </label>
+
+            <br>
+
+            <label>
+                <input type="radio" name="funct" id="funct-func2">
+                2da funcion ( 2x + y )
+            </label>
+
+            <br>
+            <br>
+
+            <button type="button" id="calculate">Calcular</button>
+
+            <p id="result"></p>
+        </form>
     </body>
 </html>
